@@ -1,1 +1,1 @@
-## Minical React Native/Expo calculator
+## Minimal React Native/Expo calculator
