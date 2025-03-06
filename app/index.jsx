@@ -6,9 +6,13 @@ import { MainBgColor } from "./const";
 export default function Index() {
   return (
     <SafeAreaView style={styles.home}>
-      <View style={styles.test}></View>
+      <View style={styles.screen}>
+        <Text style={styles.txt}>Numbers</Text>
+      </View>
 
-      <StatusBar barStyle="default" backgroundColor={MainBgColor} />
+      <View style={styles.buttons}></View>
+
+      {<StatusBar barStyle="default" backgroundColor={MainBgColor} />}
     </SafeAreaView>
   );
 }
@@ -18,14 +22,16 @@ const styles = StyleSheet.create({
     backgroundColor: MainBgColor,
     flex: 1,
   },
-  test: {
-    backgroundColor: "blue",
-    height: 60,
-    width: 40,
+  screen: {
+    backgroundColor: MainBgColor,
+    flex: 1,
+  },
+  buttons: {
+    backgroundColor: "indianred",
+    flex: 1.2,
   },
   txt: {
-    fontWeight: "bold",
-    fontSize: 20,
-    color: "#444",
-  },
+    color: "white",
+    fontWeight: "bold"
+  }
 });
